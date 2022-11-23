@@ -1,0 +1,19 @@
+<section class="newPost">
+    <button type="submit" class="newPostBtn" id="newPost"> + Create New Post</button>
+</section>
+
+{{#if posts.length}}
+<section>
+    <h2>Your Taco Dashboard</h2>
+    <ul class="postList">
+        {{#eash posts as |post|}}
+        <li>
+            {{> postInfo post}}
+            <a href="/dashboard/edit/{{post.id}}" class="editLink">Edit Post</a>
+        </li>
+        {{/each}}
+    </ul>
+</section>
+{{/if}}
+
+<script src="/public/js/create-post.js"></script>

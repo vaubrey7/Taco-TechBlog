@@ -1,0 +1,28 @@
+<a href="/dashboard" class="goBack"> &lArr; Back to the Taco Dashboard</a>
+
+<article class="newPage">
+    <section class="editForm">
+        <div class="formHeading">
+            <h2>Edit Taco Post</h2>
+        </div>
+        <div class="formSection">
+            <form class="editPost">
+                <div class="postTitle">
+                    <label for="postTitle">Title</label>
+                    <input type="text" id="postTitle" name="postTitle" value="{{post.title}}" />
+                </div>
+                <dvi class="postContent">
+                    <label for="postContent">Post Content</label>
+                    <textarea class="entryField" id="postContent" name="postContent">{{post.content}}</textarea>
+                </dvi>
+                <button type="submit">Save and Update Post</button>
+                <button type="button" class="deletePostBtn">Delete Post</button>
+            </form>
+        </div>
+    </section>
+</article>
+
+{{#if loggedIn}}
+<script src="/public/js/edit-post.js"></script>
+<script src="/public/js/delete-post.js"></script>
+{{/if}}

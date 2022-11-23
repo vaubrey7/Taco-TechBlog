@@ -1,0 +1,22 @@
+<a href="/dashboard" class="goBack"> &lArr; Back to Taco Dashboard</a>
+<br />
+<br />
+
+{{> postInfo post}}
+
+{{#if loggedIn}}
+<form class="commentForm">
+    <div>
+        <textarea name="commentBody"></textarea>
+    </div>
+    <div>
+        <button type="submit">Add Comment</button>
+    </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/public/js/comment.js"></script>
+{{/if}}
