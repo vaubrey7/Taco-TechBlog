@@ -1,5 +1,5 @@
 # Taco-TechBlog
-
+Unfortuanately I couldn't get this to run 100%, I'm probably missing something simple or overcomplicating it. I'm guessing I'm about 85% done witht the way I'm trying to do it. 
 
 ## Repository 
 
